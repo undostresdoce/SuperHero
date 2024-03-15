@@ -1,0 +1,77 @@
+:root {
+  --background-color: #43a88d;
+  --navbar-background: url("https://th.bing.com/th/id/OIG2.WMeQBxRQZuanmclF4T4P?w=1024&h=1024&rs=1&pid=ImgDetMain");
+  --button-background: red;
+  --button-color: gold;
+  --footer-gradient: linear-gradient(
+    to bottom right,
+    gold 33.33%,
+    orange 33.33%,
+    orange 66.66%,
+    #f09454 66.66%
+  );
+}
+
+body {
+  background-color: var(--background-color);
+  background-image: url("https://img.freepik.com/vector-premium/fondo-blanco-estilo-comic_476151-745.jpg?w=1060");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  font-family: "Comic Neue", cursive;
+}
+
+.navbar {
+  background-image: var(--navbar-background);
+}
+
+.imagen {
+  width: 60%;
+  margin: 0 auto;
+}
+
+.form-label {
+  width: 100%;
+  text-align: center;
+  display: block;
+  margin: 0 auto;
+  margin-bottom: 20px;
+}
+
+#find {
+  width: 100%;
+}
+
+#btnBusqueda {
+  height: 35px;
+  background-color: var(--button-background);
+  color: var(--button-color);
+}
+
+.infoSuperheroes,
+#chartContainer {
+  width: 100%;
+}
+
+@media (min-width: 768px) {
+  #find {
+    width: 50%;
+  }
+
+  .table {
+    width: 50%;
+  }
+}
+
+@media (min-width: 992px) {
+  .infoSuperheroes,
+  #chartContainer {
+    width: 85%;
+  }
+}
+
+footer {
+  background-image: var(--footer-gradient);
+  background-repeat: no-repeat;
+  color: black;
+}
